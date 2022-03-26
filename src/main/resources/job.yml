@@ -1,0 +1,12 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: containerruntime
+spec:
+  template:
+    spec:
+      containers:
+        - name: containerruntime
+          image: localhost:5000/container_runtime
+      restartPolicy: Never
+  backoffLimit: 4
