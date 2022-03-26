@@ -12,7 +12,7 @@ public class GamePlatformServiceImpl implements GameplatformService {
     }
 
     @Override
-    public void run() {
-
+    public String run() {
+        return runtimeClient.run();
     }
 }

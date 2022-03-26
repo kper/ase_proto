@@ -13,7 +13,7 @@ public class GamePlatformController {
     }
 
     @PostMapping(value = "/gameplatform")
-    void create() {
-        gameplatformService.run();
+    public String create() {
+        return gameplatformService.run();
     }
 }
